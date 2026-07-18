@@ -32,7 +32,6 @@ const startServer = async () => {
   } catch (error) {
     console.error("Database connection failed:", error);
     
-    // Agar DB connect na bhi ho, tab bhi server ko crash hone se bachane ke liye listen karwa lein
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT} (Database Error)`);
     });
